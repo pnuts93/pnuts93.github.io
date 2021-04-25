@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pietro Nuti | Home</title>
+		<link href="stylesheet.css" rel="stylesheet">
+		<style>
+			h1 	{
+				padding: 150px 0px;
+				font-size: 60px;
+				color: black;
+				text-align: center;
+				}
+			h2 	{
+				text-align: left;
+				font-size: 30px;
+				}
+			h2 a	{
+				color: black;
+				}
+			h2 a:hover{
+				color: rgb(100,100,100);
+				}
+			h3	{
+				font-size: 12px;
+				color: rgb(150,150,150);
+				text-align: right;
+				}
+			main 	{
+				display: grid;
+				grid-template-columns: 1fr 2fr;
+				}
+			main img {
+				border: 1px solid red;
+				object-fit: contain;
+				width: 100%;
+				}
+			main p {
+				text-align: justify;
+				color:rgb(80,80,80);
+				font-size: 15px;
+				}
+			footer	{
+				padding: 50px 10px 10px 10px;
+				display: grid;
+				grid-template-columns: auto auto;
+				}
+				/*
+			footer img{
+				height: 40px;
+				width: 40px;
+				object-fit: scale-down;
+				padding: 10px 10px;
+				border: 1px solid black;
+				border-radius: 50%;
+				position: fixed;
+				bottom: 15px;
+				background-color: white;
+				transition: transform 0.5s;
+				transition-delay: 0.8s;
+				}
+			footer img:hover {
+				transform: rotateY(180deg);
+				transition-delay: 0.1s;
+				}
+				*/
+			a 	{
+				text-decoration: none;
+				}
+			p a:link{
+				color: #637bad;
+				}
+			p a:visited{
+				color: #34415d;
+				}
+			p a:hover{
+				color: #34415d;
+				font-weight: bold;
+				}
+			.section{
+				padding: 0 15px;
+				}
+			.arrow	{
+				width: 4%;
+				height: auto;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				}
+		</style>
+	</head>
+	<body>
+	<div class="topnav">
+	<a href="home.html"><img src="img/logo.svg" alt="logo"></a>
+	<a href="about_me.html">About Me</a>
+	<div class="dropdown">
+		<a class="dropbtn" href="projects.html">Projects</a>
+		<div class="dropobj">
+			<a href="projects_architecture.html">Architecture</a>
+			<a href="projects_design.html">Design</a>
+			<a href="projects_planning.html">Planning</a>
+			<a href="projects_programming.html">Programming</a>
+		</div>
+	</div>
+	<a href="contacts.html">Contacts</a>
+	</div>
+	<h1>Hello,<br>welcome to my portfolio.</h1>
+	<img class="arrow" src="img/arrow.svg" alt="arrow">
+	<hr>
+	<main>
+		<img src="../circle.png" alt="pic"/>
+		<div class="section">
+		<h2><a href="about_me.html">About Me</a></h2>
+		<p>My name is Pietro. I completed a bachelor program in Architecture in 2016 and I earned a master degree in Urban planning and environmental policy in 2019. Among my interests there are programming and design, which is one of the reasons I decided to use <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> to publish my portfolio. Scroll down to see some of my projects!</p>
+		</div>
+		<img src="../circle.png" alt="pic"/>
+		<div class="section">
+		<h2><a href="projects_architecture.html">Architecture</a></h2>
+		<p>These are some of the architecture projects I developed during my bachelor program.</p>
+		</div>
+		<img src="../circle.png" alt="pic"/>
+		<div class="section">
+		<h2><a href="projects_design.html">Design</a></h2>
+		<p>These are some of the design projects I worked on in my free time.</p>
+		</div>
+		<img src="../circle.png" alt="pic"/>
+		<div class="section">
+		<h2><a href="projects_planning.html">Planning</a></h2>
+		<p>In this section I want to show you the cities where I lived.</p>
+		</div>
+		<img src="../circle.png" alt="pic"/>
+		<div class="section">
+		<h2><a href="projects_programming.html">Programming</a></h2>
+		<p>That's right! Even though this is a bit unusual for a porfolio, unless we consider web development, I want to dedicate this section of my portfolio to the code I wrote, not only to design this website, but also to analyse some data and more.</p>
+		</div>
+	</main>
+	<footer>
+<!--	<img src="img/network.svg" alt="logo"> -->
+	<h3>Author: Pietro Nuti</h3>
+	</footer>
+	</body>
+</html>

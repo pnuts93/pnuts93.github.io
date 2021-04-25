@@ -1,0 +1,73 @@
+			body 	{
+				background-color: white;
+				}
+			* 	{
+				font-family: Courier New;
+				}
+			.topnav{
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr 6fr;
+				position: fixed;
+				width: 100%;
+				top: 0;
+				background-color: white;
+				text-align:center;
+				border-style: solid;
+				border-color: white white rgb(25,25,25) white;
+				border-width: 1px;
+				}
+			.topnav a{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: rgb(25,25,25);
+				font-size: 15px;
+				padding: 10px 25px;
+				text-decoration: none;
+				border-left: 1px solid white;
+				border-right: 1px solid white;
+				}
+			.topnav a:hover {
+				color: black;
+ 				text-shadow: rgb(150,150,150) 0 0 2px;
+				font-weight: bold;
+				border-left: 1px solid rgb(25,25,25);
+				border-right: 1px solid rgb(25,25,25);
+				}
+			.topnav img {
+				height: 30px;
+				width: auto;
+				padding: 0px 5px !important;
+				}
+			.dropdown {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-left: 1px solid white;
+				border-right: 1px solid white;
+				box-sizing: border-box;
+				}
+			.dropdown .dropbtn {
+				color: rgb(25,25,25);
+				font-size: 15px;
+				padding: 10px 25px;
+				}	
+			.dropdown .dropobj {
+				display: none;
+				position: absolute;
+				top: 100%;
+				background-color: rgb(220, 220, 220);
+				box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+				z-index: 1;
+				}
+			.dropdown:hover .dropobj {
+				display: block;
+				}
+			.dropobj a {
+				display: block;
+				float: none;
+				font-size: 12px;
+				}
+			.dropobj a:hover{
+				background-color: white;
+				}
