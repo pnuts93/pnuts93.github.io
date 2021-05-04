@@ -4,9 +4,125 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Pietro Nuti | About Me</title>
-		<link href="stylesheet.css" rel="stylesheet">
 	</head>
 	<style>
+		body 	{
+			background-color: white;
+			}
+		* 	{
+			font-family: Courier New;
+			}
+		.topnav{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 6fr;
+			position: fixed;
+			width: 100%;
+			top: 0;
+			background-color: white;
+			text-align:center;
+			border-style: solid;
+			border-color: white white rgb(25,25,25) white;
+			border-width: 1px;
+			}
+		.topnav a{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: rgb(25,25,25);
+			font-size: 15px;
+			padding: 10px 25px;
+			text-decoration: none;
+			border-left: 1px solid white;
+			border-right: 1px solid white;
+			}
+		.topnav a:hover {
+			color: black;
+ 			text-shadow: rgb(150,150,150) 0 0 2px;
+			font-weight: bold;
+			border-left: 1px solid rgb(25,25,25);
+			border-right: 1px solid rgb(25,25,25);
+			}
+		.topnav img {
+			height: 30px;
+			width: auto;
+			padding: 0px 5px !important;
+			}
+		.dropdown {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-left: 1px solid white;
+			border-right: 1px solid white;
+			box-sizing: border-box;
+			}
+		.dropdown .dropbtn {
+			color: rgb(25,25,25);
+			font-size: 15px;
+			padding: 10px 25px;
+			}	
+		.dropdown .dropobj {
+			display: none;
+			position: absolute;
+			top: 100%;
+			background-color: rgb(220, 220, 220);
+			box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+			z-index: 1;
+			}
+		.dropdown:hover .dropobj {
+			display: block;
+			}
+		.dropobj a {
+			display: block;
+			float: none;
+			font-size: 12px;
+			}
+		.dropobj a:hover{
+			background-color: white;
+			}
+		h1 	{
+			padding: 150px 0px;
+			font-size: 60px;
+			color: black;
+			text-align: center;
+			}
+		h2 	{
+			text-align: left;
+			font-size: 30px;
+			}
+		h2 a	{
+			color: black;
+			}
+		h2 a:hover{
+			color: rgb(100,100,100);
+			}
+		h3	{
+			font-size: 12px;
+			color: rgb(150,150,150);
+			text-align: right;
+			}
+		main {
+			margin: 50px 0 0 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			}
+		main > * {
+			justify-self: left;
+			align-self: start;
+			border: 1px solid grey;
+			width: 100%;
+			height: 300px;
+			}
+		main h2 {
+			padding: 20px;
+			}
+		a {
+			text-decoration: none;
+			}
+		footer	{
+			padding: 30px 10px 10px 10px;
+			display: grid;
+			grid-template-columns: auto auto;
+			}
 	</style>
 	<body>
 	<div class="topnav">
@@ -23,5 +139,22 @@
 	</div>
 	<a href="contacts.html">Contacts</a>
 	</div>
+	<main>
+		<div>
+			<h2><a href="projects_architecture.html">Architecture</a></h2>
+		</div>
+		<div>
+			<h2><a href="projects_design.html">Design</a></h2>
+		</div>
+		<div>
+			<h2><a href="projects_planning.html">Planning</a></h2>
+		</div>
+		<div>
+			<h2><a href="projects_programming.html">Programming</a></h2>
+		</div>
+	</main>
+	<footer>
+		<h3>Author: <a href="about_me.html">Pietro Nuti</a></h3>
+	</footer>
 	</body>
 </html>
