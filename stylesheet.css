@@ -1,5 +1,7 @@
 			body 	{
 				background-color: white;
+				width: 100%;
+				display: block;
 				}
 			* 	{
 				font-family: Courier New;
@@ -12,9 +14,7 @@
 				top: 0;
 				background-color: white;
 				text-align:center;
-				border-style: solid;
-				border-color: white white rgb(25,25,25) white;
-				border-width: 1px;
+				z-index: 1;
 				box-sizing: border-box;
 				}
 			.topnav a{
@@ -32,7 +32,6 @@
 			.topnav a:hover {
 				color: black;
  				text-shadow: rgb(150,150,150) 0 0 2px;
-				font-weight: bold;
 				border-left: 1px solid rgb(25,25,25);
 				border-right: 1px solid rgb(25,25,25);
 				}
@@ -58,7 +57,6 @@
 				display: none;
 				position: absolute;
 				top: 100%;
-				background-color: rgb(220, 220, 220);
 				box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 				z-index: 1;
 				}
@@ -69,9 +67,13 @@
 				display: block;
 				float: none;
 				font-size: 12px;
-				}
-			.dropobj a:hover{
 				background-color: white;
+				}
+			main 	{
+				margin: 60px 0;
+				padding: 20px 200px;
+				width: 100%;
+				box-sizing: border-box;
 				}
 			h1 	{
 				padding: 150px 0px;
@@ -94,31 +96,10 @@
 				color: rgb(150,150,150);
 				text-align: right;
 				}
-			main 	{
-				display: grid;
-				grid-template-columns: 1fr 2fr;
-				margin: 60px 20px;
-				width: 100%;
-				box-sizing: border-box;
-				}
-			main img {
-				object-fit: contain;
-				width: 75%;
-				place-self: center;
-				}
-			main p {
-				text-align: justify;
-				color:rgb(80,80,80);
-				font-size: 15px;
-				margin: 0 50px 0 0;
-				}
 			footer	{
 				padding: 50px 10px 10px 10px;
 				display: grid;
 				grid-template-columns: auto auto;
-				}
-			.section{
-				padding: 30px 15px;
 				}
 			.img_link {
 				place-self: center;
@@ -126,6 +107,7 @@
 				}
 			a 	{
 				text-decoration: none;
+				color: grey;
 				}
 			p a:link{
 				color: black;
